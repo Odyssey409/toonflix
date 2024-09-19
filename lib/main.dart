@@ -13,6 +13,9 @@ class App extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Hello Flutter'),
+          centerTitle: true,
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
         ),
         body: Center(
           child: Text('Hello, World!'),
