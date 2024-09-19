@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
+class Player {
+  String? name;
+  Player({this.name});
+}
+
 void main() {
+  var odyssey = Player();
   runApp(App());
 }
 
@@ -12,10 +18,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello Flutter'),
+          title: Text(
+            'Hello Flutter',
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
           backgroundColor: Colors.blue,
-          foregroundColor: Colors.white,
         ),
         body: Center(
           child: Text('Hello, World!'),
