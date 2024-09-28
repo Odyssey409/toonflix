@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
@@ -40,7 +38,7 @@ class App extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         const Text(
-                          'Hey, Selena',
+                          'Hey, Odyssey',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28,
@@ -126,27 +124,21 @@ class App extends StatelessWidget {
                   amount: "6 428",
                   code: "EUR",
                   icon: Icons.euro,
-                  isInverted: false,
+                  order: 1,
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -20),
-                  child: const CurrencyCard(
-                    name: "Bitcoin",
-                    amount: "9 785",
-                    code: "BTC",
-                    icon: Icons.currency_bitcoin,
-                    isInverted: true,
-                  ),
+                const CurrencyCard(
+                  name: "Bitcoin",
+                  amount: "9 785",
+                  code: "BTC",
+                  icon: Icons.currency_bitcoin,
+                  order: 2,
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -40),
-                  child: const CurrencyCard(
-                    name: "Dollar",
-                    amount: "962",
-                    code: "USD",
-                    icon: Icons.attach_money,
-                    isInverted: false,
-                  ),
+                const CurrencyCard(
+                  name: "Dollar",
+                  amount: "962",
+                  code: "USD",
+                  icon: Icons.attach_money,
+                  order: 3,
                 ),
               ],
             ),
