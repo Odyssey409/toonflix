@@ -2,13 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
-class Player {
-  String? name;
-  Player({this.name});
-}
-
 void main() {
-  var odyssey = Player();
   runApp(const App());
 }
 
